@@ -5,6 +5,6 @@ SELECT review_score AS pontos_avaliação
 FROM olist_order_reviews_dataset; -- arroz com feijão
 
 SELECT review_score AS 'Pontuação de Avaliação',
-	   count(review_score) AS 'Quantidade de Avaliações'
+       count(review_score) AS 'Quantidade de Avaliações'
 FROM olist_order_reviews_dataset
 GROUP BY review_score; -- mais elegante e completo?
