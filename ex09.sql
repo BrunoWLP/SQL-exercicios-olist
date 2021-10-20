@@ -7,7 +7,7 @@ SELECT order_status,
 FROM olist_orders_dataset;
 DELETE FROM olist_orders_dataset 
 WHERE order_status = 'unavailable'
-    AND order_approved_at < '2017-10-10'; -- registros deletados
+    AND order_approved_at <= '2017-10-10 23:59:59'; -- registros deletados
 	
 -- Prova
 SELECT order_status AS 'Status do Pedido',
